@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>HEART</title>
+</head>
+<style>
+    #gh{
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+    #vf{
+        font-size: 30px;
+        margin-top: -72px;
+        margin-left: 1100px;
+    }
+    #vf1{
+        font-size: 12px;
+        margin-top: 0px;
+        margin-left: 1140px;
+        color: black;
+    }
+    h1{
+        font-size: 90px;
+        font-family: Didot, serif;
+        text-align: center;
+        margin-top: 120px;
+    }
+    #sa{
+        font-size: 23px;
+        color: rgb(61, 61, 61);
+        text-align: center;
+    }
+    #da{
+        background-color: rgb(58, 44, 155);
+        width: 600px;
+        height: 300px;
+        border-radius: 25px;
+        margin-left: 100px;
+        margin-top: 150px;
+    }
+    #fa{
+        margin-left: 240px;
+    }
+    #ik{
+        color: white;
+        margin-top:-120px ;
+        font-size: 15px;
+        margin-left: 36px;
+    }
+    #uaa{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color: white;
+        margin-top: -10px;
+    }
+    #as{
+        color: white;
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #vfsa{
+        background-color: rgb(204, 236, 228);
+        width: 470px;
+        height: 600px;
+        border-radius: 25px;
+        margin-left: 760px;
+        margin-top: -301px;
+    }
+    #dsa{
+        margin-left: 120px;
+    }
+    #ik1{
+        color: rgb(59, 56, 56);
+        margin-top:-100px ;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    #uaa1{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color:rgb(59, 56, 56);
+        margin-top: -10px;
+    }
+    #as1{
+        color: rgb(59, 56, 56);
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #vfsa1{
+        background-color: rgb(250, 202, 131);
+        width: 600px;
+        height: 580px;
+        border-radius: 25px;
+        margin-left: 100px;
+        margin-top: -270px;
+    }
+    #dsa1{
+        margin-left: 250px;
+    }
+    #ik11{
+        color: rgb(70, 21, 6);
+        margin-top:-140px ;
+        font-size: 15px;
+        margin-left: 30px;
+    }
+    #uaa11{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color:rgb(70, 21, 6);
+        margin-top: -10px;
+    }
+    #as11{
+        color: rgb(70, 21, 6);
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #vfsa2{
+        background-color: rgb(252, 243, 160);
+        width: 470px;
+        height: 310px;
+        border-radius: 25px;
+        margin-left: 760px;
+        margin-top: -300px;
+    }
+    #dsa2{
+        margin-left: 219px;
+        margin-top: 10px;
+    }
+    #ik2{
+        color: rgb(224, 125, 11);
+        margin-top:-210px ;
+        font-size: 15px;
+        margin-left: 33px;
+    }
+    #uaa2{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color:rgb(224, 125, 11);
+        margin-top: -10px;
+    }
+    #as2{
+        color: rgb(224, 125, 11);
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #vfsa22{
+        background-color: rgb(130, 175, 235);
+        width: 470px;
+        height: 310px;
+        border-radius: 25px;
+        margin-left: 100px;
+        margin-top: 10px;
+    }
+    #dsa22{
+        margin-left: 180px;
+        margin-top: 10px;
+    }
+    #ik22{
+        color: rgb(37, 58, 247);
+        margin-top:-120px ;
+        font-size: 15px;
+        margin-left: 33px;
+    }
+    #uaa22{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color:rgb(37, 58, 247);
+        margin-top: -10px;
+    }
+    #as22{
+        color: rgb(37, 58, 247);
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #vfsaf{
+        background-color: rgb(156, 198, 253);
+        width: 650px;
+        height: 310px;
+        border-radius: 25px;
+        margin-left: 586px;
+        margin-top: -310px;
+    }
+    #dsaf{
+        margin-left: 350px;
+        margin-top: 10px;
+    }
+    #ikf{
+        color: rgb(6, 80, 52);
+        margin-top:-140px ;
+        font-size: 15px;
+        margin-left: 33px;
+    }
+    #uaaf{
+        font-size: 30px;
+        font-family: Didot, serif;
+        margin-left:30px ;
+        color:rgb(6, 80, 52);
+        margin-top: -10px;
+    }
+    #asf{
+        color: rgb(6, 80, 52);
+        margin-left: 30px;
+        margin-top: -5px;
+    }
+    #fb{
+        background-color:  #D9F8F0;
+        height: 300px;
+        margin-top: 200px;
+    }
+    #fwq{
+        margin-left: 90px;
+        margin-top: 20px;
+    }
+    h2{
+        font-size: 30px;
+        font-family: Didot, serif;
+        color: rgb(122, 122, 122);
+        font-size: 29px;
+        margin-top: 0px;
+        margin-left: 90px;
+    }
+    #d{
+        margin-top: 30px;
+        margin-left: 83px;
+    }
+    #c{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #ds{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #b1{
+        color: rgb(78, 78, 78);
+        font-family: Didot, serif;
+        margin-left: 300px;
+        margin-top: -20px;
+    }
+    #daaaa{
+        color: orangered;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        margin-left: 800px;
+        margin-top: -200px;
+        font-size: 12px;
+    }
+    #faza{
+        margin-left: 784px;
+    }
+    #d1{
+        color: black;
+        padding: 1em;
+
+    }
+    #faza1{
+        margin-left: 784px;
+        margin-top: -150px;
+    }
+    #daaaa:hover{
+        color: rgb(158, 45, 4);
+    }
+    .SlideDownMenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 22px 0;
+    text-align: center;
+}
+.SlideDownMenu ul li {
+  display: inline-block;
+}
+.SlideDownMenu ul li a {
+  position:relative;
+  z-index: 1;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.SlideDownMenu ul li a:hover {
+  color: rgb(7, 7, 7);
+}
+.SlideDownMenu ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  border-radius:5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.SlideDownMenu ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+  }
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+  
+/*Menu Tap*/
+.MenuTab {
+  float: right;
+  margin: 0 40px 0 0;
+  width: 40px;
+}
+/*Nav Tap*/
+.NavTab {
+    border-radius: 0 0 5px 5px;
+    height: 40px;
+    text-align: center;
+    width: 60px;
+    margin-top: 15px;
+}
+/*Border*/
+.NavTab a {
+  position: relative;
+  padding-left: 25px;
+}
+ 
+.NavTab a:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 25px;
+  height: 0.125em;
+  border-top: 0.5em double #333;
+  border-bottom: 0.2em solid #333;
+}
+.SlideDownMenu {
+  border-top: 8px solid #dcf1ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.SlideDownMenu nav {
+  background-color: #dcf1ff;
+  display: none;
+  height: 570px;
+  top: 0;
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+}
+#dass{
+    margin-top: -50px;
+}
+h3:hover{
+    color: orangered;
+}
+#a22{
+    text-decoration: none;
+}
+</style>
+<body>
+    <div>
+    <img id="gh" src="Heart.png" width="100" height="110">
+        <h1>Investing in happiness.</h1>
+    <p id="sa">Europe's consumer technology VC</p>
+    </div>
+  <a href="pd.html" id="a22"> <div id="da">
+        <img id="fa" src="6023c6394b9a4d535290dd0c_il1.png" width="350px" height="300px">
+        <p id="ik">A B O U T</p>
+        <p id="uaa">100% consumer tech</p>
+        <p id="as">Specialization drives success</p>
+    </div></a>
+   <a href="da.html" id="a22"> <div id="vfsa">
+    <img id="dsa" src="6023c6394b9a4d0aaa90dd0a_il2.png" width="350px" height="550px">
+    <p id="ik1">T H E S I S</p>
+        <p id="uaa1">Making people happy</p>
+        <p id="as1">We invest in companies re-enchanting the world<br/>through technology</p>
+    </div></a>
+    <a href="pd.html" id="a22"><div id="vfsa1">
+        <img id="dsa1" src="60379cefa2c2a4242fa1c4ff_il3.png" width="350px" height="550px">
+        <p id="ik11">C O M P A N I E S</p>
+            <p id="uaa11">Our
+                Raison d'être</p>
+            <p id="as11">We're proud to have been among the first<br/>
+                 investors in 85 category-defining consumer<br/> technology companies.</p>
+        </div></a>
+        <a href="da.html" id="a22"><div id="vfsa2">
+            <img id="dsa2" src="6023c6394b9a4dd67c90dd09_il5.png" width="250px" height="300px">
+            <p id="ik2">T E A M</p>
+                <p id="uaa2">Global at heart</p>
+                <p id="as2">A group of investors in love with<br/>
+                 our craft and passionate about<br/>
+                enterprenership
+                </p>
+            </div></a>
+            <a href="pd.html" id="a22"><div id="vfsa22">
+                <img id="dsa22" src="hka.png" width="300px" height="300px">
+                <p id="ik22">V A L U E S</p>
+                    <p id="uaa22">Truth + Love = Growth</p>
+                    <p id="as22">Radically differnt venture capital
+                    </p>
+                </div></a>
+                <a href="da.html" id="a22"><div id="vfsaf">
+                    <img id="dsaf" src="vs.png" width="300px" height="300px">
+                    <p id="ikf">I N S I G H T</p>
+                        <p id="uaaf">Sharing is caring</p>
+                        <p id="asf">Everything you've always wanted to know<br/>about consumer technology
+                        </p>
+                    </div></a>
+                    <div id="fb">
+                    <img id="fwq" src="fs.png" width="100px" height="100px">
+                    <h2>“It is only with the heart that one can<br/>
+                          see rightly; what is essential is<br/> invisible to the eye. ”</h2>
+                          <img id="d" src="a.svg">
+                          <img id="c" src="b.svg">
+                          <img id="ds" src="c.svg">
+                          <p id="b1">contact@UmeLaila.com</p>
+                          <p id="daaaa">SUBSCRIBE TO OUR NEWSLETTER</p>
+                          <nav class="navbar">
+                              <ul id="faza" class="nav navbar-nav">
+                              <li><a id="d1" href="pd.html">A B O U T</a></li>
+                                <li><a id="d1" href="da.html">T E A M</a></li>
+                                <li><a id="d1" href="da.html">I N S I G H T </a></li>
+                              </ul>
+                            </div>
+                          </nav>
+                          <nav class="navbar">
+                            <ul id="faza1" class="nav navbar-nav">
+                              <li><a id="d1" href="d.html">T H E S I S</a></li>
+                              <li><a id="d1" href="a.html">V A L U E S</a></li>
+                              <li><a id="d1" href="pd.html">C O P A N I E S</a></li>
+                            </ul>
+                          </div>
+                        </nav>
+                    </div>
+                    <div class="SlideDownMenu">
+                        <nav id="dass">
+                            <img id="fwq" src="fs.png" width="100px" height="100px">
+<div id="dass">
+                           <h3><a href="pd.html">A B O U T</h3></a>
+                           <h3><a href="pd.html">T E A M</h3>?</a>
+                           <h3><a href="pd.html">I N S I G H T</h3></a>
+                           <h3><a href="pd.html">T H E S I S</h3></a>
+                           <h3><a href="pd.html">V A L U E S</h3></a>
+                           <h3><a href="pd.html">C O P A N I E S</h3></a>
+                           <img id="d" src="a.svg">
+                          <img id="c" src="b.svg">
+                          <img id="ds" src="c.svg">
+</div>
+                        
+                        </nav>
+                        <div class="MenuTab">
+                            <div class="NavTab">
+                              <a href="#"><p id="vf1" ><b>MENU</b></p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                    $(function(){
+                        $('.SlideDownMenu').on('click', '.MenuTab', function () {
+                          $('nav').slideToggle('fast');
+                          return false;
+                        });
+                      });
+                      </script>
+</body>
+</html>
