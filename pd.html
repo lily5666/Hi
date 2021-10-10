@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+<style>
+    #gh{
+        margin-left: 40px;
+        margin-top: -20px;
+    }
+
+    .SlideDownMenu ul {
+    list-style: outside none none;
+    margin: 0;
+    padding: 22px 0;
+    text-align: center;
+}
+.SlideDownMenu ul li {
+  display: inline-block;
+}
+.SlideDownMenu ul li a {
+  position:relative;
+  z-index: 1;
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+.SlideDownMenu ul li a:hover {
+  color: rgb(7, 7, 7);
+}
+.SlideDownMenu ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: #ffffff;
+  border-radius:5px;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+  transition: all .5s;
+}
+.SlideDownMenu ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+  }
+}
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: rgb(255, 255, 255);
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+  
+/*Menu Tap*/
+.MenuTab {
+  float: right;
+  margin: 0 40px 0 0;
+  width: 40px;
+}
+/*Nav Tap*/
+.NavTab {
+    border-radius: 0 0 5px 5px;
+    height: 40px;
+    text-align: center;
+    width: 60px;
+    margin-top: 15px;
+}
+/*Border*/
+.NavTab a {
+  position: relative;
+  padding-left: 25px;
+}
+ 
+.NavTab a:before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 0;
+  width: 25px;
+  height: 0.125em;
+  border-top: 0.5em double #333;
+  border-bottom: 0.2em solid #333;
+}
+.SlideDownMenu {
+  border-top: 8px solid #dcf1ff;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.SlideDownMenu nav {
+  background-color: #dcf1ff;
+  display: none;
+  height: 570px;
+  top: 0;
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+}
+#dass{
+    margin-top: -50px;
+}
+h3:hover{
+    color: orangered;
+}
+#d{
+        margin-top: 30px;
+        margin-left: 83px;
+    }
+    #c{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #ds{
+        margin-top: 30px;
+        margin-left: 30px;
+    }
+    #sas{
+      background-color: rgb(221, 221, 221);
+      height: 400px;
+      width: 900px;
+      border-radius: 25px;
+      margin-left: 200px;
+      margin-top: 200px;
+      }
+      #ssaa{
+        padding: 1em;
+      }
+      h1{
+        font-size: 55px;
+        font-family: Didot, serif;
+        text-align: center;
+        margin-top: -360px;
+        margin-left: 230px;
+      }
+      #sa1{
+        font-size: 17px;
+        margin-left: 320px;
+        color: grey;
+      }
+      #sa3{
+        font-size: 17px;
+        margin-left: 520px;
+        margin-top: -150px;
+        color: grey;
+      }
+</style>
+<body>
+    <div>
+    <img id="gh" src="Heart.png" width="100" height="110">
+ 
+                    <div class="SlideDownMenu">
+                        <nav id="dass">
+                            <img id="fwq" src="fs.png" width="100px" height="100px">
+<div id="dass">
+                           <h3>A B O U T</h3>
+                           <h3>T E A M</h3>
+                           <h3>I N S I G H T</h3>
+                           <h3>T H E S I S</h3>
+                           <h3>V A L U E S</h3>
+                           <h3>C O P A N I E S</h3>
+                           <img id="d" src="a.svg">
+                          <img id="c" src="b.svg">
+                          <img id="ds" src="c.svg">
+</div>
+                        
+                        </nav>
+                        <div class="MenuTab">
+                            <div class="NavTab">
+                              <a href="#"><p id="vf1" ></p></a>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="sa.png" width="1260px">
+                    <div id="sas">
+<img id="ssaa" src="zza.png" height="400" width="300px">
+<h1>100% consumer tech</h1>
+<p id="sa1">Our narrow specialization on consumer technology companies yields <br/>
+  superior insights for our portfolio founders — and superior returns for our<br/> fund investors.</p>
+                    </div>
+                    <p id="sa3">Consumer technology runs the gamut of consumer spend categories – <br/>
+                      from real estate and fintech to media & entertainment. Our thesis of<br/> investing in happiness can help you refine your purpose, vision and mission.</p>
+                                        </div>
+                    <script>
+                    $(function(){
+                        $('.SlideDownMenu').on('click', '.MenuTab', function () {
+                          $('nav').slideToggle('fast');
+                          return false;
+                        });
+                      });
+                      </script>
+</body>
+</html>
